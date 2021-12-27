@@ -11,7 +11,10 @@ _eos        = '~'
 _characters = '"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!\'(),-.:;? '
 
 # Prepend "@" to ARPAbet symbols to ensure uniqueness (some are the same as uppercase letters):
-_arpabet = ['@' + s for s in cmudict.valid_symbols]
+# _arpabet = ['@' + s for s in cmudict.valid_symbols]
+
+# 32
+_thai_ipa = ['s', 'l', 'e', '3', 'j', 'i', 'o', 'z', 'v', 'n', 'w', 'q', 'g', 'a', 'm', 'c', 'h', 'x', 'f', '2', '4', 't', '@', '0', 'u', 'b', 'k', 'r', 'd', 'p', '1', '^']
 
 # Export all symbols:
-symbols = [_pad, _eos] + list(_characters) + _arpabet
+symbols = [_pad, _eos] + list(_characters) + _thai_ipa
